@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+*{ margin: 0;
+padding: 0;}
+body{
+     background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+.topdiv{
+     height:905px; 
+    max-width: 1920px;
+    background-image: url("./images/sidhu\ bg.jpg"); 
+            background-repeat: no-repeat;
+            background-size: contain; 
+        }
+
+
+
+/*utility class*/
+.carrer,.songs,.death{
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 100px;
+    text-decoration: underline;
+}
+.list-group-item{   
+    text-align: center;
+    font-size: 20px;
+    width:350px;
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* font-family: Georgia, 'Times New Roman', T   imes, serif; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border:2px solid rgb(255, 255, 255);
+}
+.list-group-item  :hover{
+    border:2px solid black;
+    color:black;
+    font-weight: bolder;
+    background-color: white;
+}
+.deathpara{
+    font-size: 28px;
+}
+.card-body{
+    color:rgb(239, 111, 111);
+    
+    font-family: 'Lumanosimo', cursive;
+    background-color: rgb(0, 0, 0);
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    height: 35px;
+    border-top: 2px solid white ;
+}
+.fline{
+    color: rgb(255, 255, 255);
+    font-family: 'Lumanosimo', cursive;
+    /* font-family: 'Playfair Display', serif; */
+}
+.faltudiv{
+    height:50px;
+}
+.downimage{
+    height:850px;
+    /* max-width: 140px; */
+    background:url("./images/bg2.jpg");
+    background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
+/* media screen for mobile */
+@media screen and (max-width:480px) {
+    .topdiv{
+        height:250px;
+    }
+    #firstpic{
+        height: 270px;
+        width:225px;
+        /* margin-bottom: 0px; */
+        /* margin-right: 0px; */
+    }
+    .firstinfo{
+        font-size: 15px;
+         margin-top: 0px;
+        max-width: 300px; 
+        /* display: flex;  */
+        flex: 0 0 auto;
+            width: 100%;
+    } 
+    .carrer,.songs{
+            width:66.6677%;
+            font-size:40px;
+        }
+        
+        #list-example{
+            display: none;
+        }
+        .death{
+        font-size:40px;
+    }
+    .deathpara{ font-size:15px}
+    .downimage{ width:320px;height:180px;}
+}
